@@ -1,0 +1,271 @@
+/* Background Image */
+
+body {
+    background: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1391&q=80') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+/* Override the clicked purple colour to white*/
+a:visited { 
+    text-decoration: none; color:white; 
+}
+/* Override the blue colour of the link text to white */
+a:link{
+  text-decoration: none; color:white; 
+}
+
+
+
+/* Title Text */
+.titletext{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    padding: 40px;
+    font: 30px/1 Comfortaa;
+    position: relative;
+}
+
+/*Subtitle Text*/
+.subtext{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    padding: 40px;
+    font: 35px/1 Comfortaa;
+    position: relative;
+}
+
+ /* Body Text + Border*/
+.bodytext{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    padding: 40px;
+    font: 20px/1 Comfortaa;
+    backdrop-filter: blur(9px);
+    position: relative;
+    background-color: #00000069;
+    border: 2px solid #f1f1f1cf;
+    box-shadow: black;
+    border-radius: 0.6rem;
+}
+
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* Image Position - Center the image*/
+.imagepos{
+  text-align: center;
+}
+
+
+/* Make the profile image round and added blur border */
+.imground{
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(9px);
+}
+
+/*Back to the top*/
+.backtop{
+    text-align: center;
+    color: white;
+    font: bold;
+    font: 35px/1 Comfortaa;
+    background-color: #ffffff7a;
+    padding: 15px;
+    background: #ffffff61;
+    border-radius: 0.6rem;
+    border: 1px solid #f1f1f1;
+    background: url('https://images.unsplash.com/photo-1488388373205-a134c1cc7e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1383&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* Navigation Bar */
+
+  ul{
+    list-style: none;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0%;
+  }
+  
+  /* Making the list display horizontally not verticly and changing the font.*/
+  li{
+    display: inline-block;
+    font: 30px/1 Comfortaa;
+  }
+
+  /* Creating space between each navigation text */
+  a{
+    width: 2px;
+    padding: 50px;
+  }
+
+  
+
+  /* Hover Effect */
+  li a:hover {
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ;
+  }
+
+/* Navigation Bar END */
+
+
+
+/* Grid Layouts--- - source - https://codepen.io/lizcoultersmith/pen/qBBxzra - i have modified the code since getting it from the source */
+
+/* Main */
+main {
+    grid-area: main;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  
+  .cards {
+    border-radius: 0.6rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    /*background: white; - original*/
+    background: #ffffff61;
+    backdrop-filter: blur(9px);
+    overflow: hidden;     
+}
+
+.cards:hover{
+    filter: contrast(100%);
+}
+
+  
+  .cards > img {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(70%);
+    filter: saturate(40%);
+    transition: all .4s ease;
+  }
+  
+  .header-cards{
+    justify-content: center;
+    letter-spacing: 5px;
+  }
+  
+  .cards > img:hover {
+    filter: saturate(100%);
+  }
+  
+  section > .cards {
+    border: 1px solid #f1f1f1;
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+  }
+
+ /* i added this */
+  .cardtitle{
+    font: 30px/1 Comfortaa;
+    color: black;
+    text-decoration: underline;
+  }
+
+   /* i added this */
+  .cardtext{
+    font: 10px/1 Comfortaa;
+    color: black;
+  }
+
+  /* i added this */
+  .cardemail{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    /*padding: 40px;*/
+    font: 20px/1 Comfortaa;
+    /*backdrop-filter: blur(13px);*/
+    position: relative;
+    background-color: #33333338;
+    border: 1px solid #f1f1f1;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    box-shadow: black;
+    border-radius: 0.6rem;
+  }
+
+  /* i added this */
+  .cardgithub{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    /*padding: 40px;*/
+    font: 20px/1 Comfortaa;
+    /*backdrop-filter: blur(13px);*/
+    position: relative;
+    background-color: #33333338;
+    border: 1px solid #f1f1f1;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    box-shadow: black;
+    border-radius: 0.6rem;
+  }
+
+  /* i added this */
+  .cardlinkedin{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: white;
+    /*padding: 40px;*/
+    font: 20px/1 Comfortaa;
+    /*backdrop-filter: blur(13px);*/
+    position: relative;
+    background-color: #33333338;
+    border: 1px solid #f1f1f1;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    box-shadow: black;
+    border-radius: 0.6rem;
+  }
+  /* Grid Layouts END*/
+
+
+  /*This is to make the profile picture round */
+.roundimg{
+  border-radius: 50%;
+}
+
+/* Move the icon up the card slightly */
+.iconpos{
+  position:relative; top:-15px;
+ }
+
+/* For the title of my "cards" */
+ h2{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: white;
+  font: 35px/1 Comfortaa;
+  letter-spacing: 6px;
+  position: relative;
+  position:relative; top:-1px;
+  text-decoration: underline;
+ }
+
+ 
